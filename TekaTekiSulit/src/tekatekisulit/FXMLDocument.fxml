@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tekatekisulit.FXMLDocumentController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecfcce" height="48.0" layoutX="26.0" layoutY="493.0" stroke="WHITE" strokeType="INSIDE" width="440.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1fcd5" height="65.0" layoutX="65.0" layoutY="347.0" stroke="WHITE" strokeType="INSIDE" width="414.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f6e9f8" height="51.0" layoutX="13.0" layoutY="189.0" stroke="WHITE" strokeType="INSIDE" width="88.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5eead" height="65.0" layoutX="-3.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="497.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bef5" height="59.0" layoutY="112.0" stroke="#350db5" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="494.0" />
+        <Button fx:id="buttonJawab" layoutX="236.0" layoutY="431.0" onAction="#jawabSoalCakLontong" prefHeight="48.0" prefWidth="159.0" text="Jawab Cak...!">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <Label fx:id="labelClue" layoutX="76.0" layoutY="354.0" text="Clue">
+         <font>
+            <Font name="Tahoma" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="367.0" text="Clue : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelHasil" layoutX="35.0" layoutY="495.0" text="Masih Salah">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textJawaban" layoutX="16.0" layoutY="431.0" onKeyPressed="#ClearTeksHasilOnPress" prefHeight="48.0" prefWidth="210.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Label layoutX="353.0" layoutY="118.0" text="Score : " />
+      <Label fx:id="labelScor" layoutX="395.0" layoutY="112.0" text="0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="118.0" text="Nama : " />
+      <Label fx:id="labelNama" layoutX="55.0" layoutY="128.0" text="Nama Anda">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="142.0" layoutY="24.0" prefHeight="94.0" prefWidth="261.0" text="     Teka-Teki Sulit" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f6e9f8" height="106.0" layoutX="13.0" layoutY="226.0" stroke="WHITE" strokeType="INSIDE" width="465.0" />
+        <Label fx:id="labelSoal" contentDisplay="CENTER" ellipsisString="" layoutX="19.0" layoutY="232.0" minHeight="16" minWidth="67.0" prefHeight="94.0" prefWidth="451.0" text="Soal" textAlignment="CENTER" textFill="#170061" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="189.0" text="Soal">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelKesempatan" layoutX="374.0" layoutY="171.0" text="5x Kesempatan">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
